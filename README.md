@@ -1,8 +1,7 @@
 MDWechat
-调Project Structure
 ====
 # 简介
- Fork自 [Blankeer/MDWechat](https://github.com/Blankeer/MDWechat) ,支持微信8.0.32 / play版7.0.21.
+ Fork自 [Blankeer/MDWechat](https://github.com/Blankeer/MDWechat) ,支持微信8.0.32 / play版7.0.21. 修改了配置文件的生成路径为/sdcard/Documents/mdwechat/。
 
 # 效果预览
 [![gif_demo](https://z3.ax1x.com/2021/03/24/6bOQKJ.gif)](https://imgtu.com/i/6bOQKJ)
@@ -42,7 +41,7 @@ MDWechat
 ~~- MDWechat(官改) 4.0 对于国内版的适配性比较好，play版微信在部分机型/框架上可能出现无法适配的状况。~~(4.1已修复这一部分play版适配)
 
 # 下载地址
-[下载地址](https://gitee.com/JoshCai/MDWechat/releases)
+
 
 # 使用教程
 [查看使用教程](https://gitee.com/JoshCai/MDWechat/wikis/?sort_id=2158198)
@@ -63,7 +62,7 @@ MDWechat
 4. [群消息助手](https://github.com/zhudongya123/WechatChatroomHelper)
 5. [WechatMagician](https://github.com/Gh0u1L5/WechatMagician)
 6. [ForceWechatDarkMode](https://github.com/chouqibao/ForceWechatDarkMode)
-
+7. [吃小喵的大咸鱼/MDWechat](https://gitee.com/JoshCai/MDWechat)
 (背景图片来源于网络)
 
 
