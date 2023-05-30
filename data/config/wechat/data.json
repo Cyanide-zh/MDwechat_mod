@@ -1,0 +1,202 @@
+[
+  {
+    "name": "8.0.32.config",
+    "desc": "8.0.32 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.32/8.0.32.config"
+  },
+  {
+    "name": "8.0.31.config",
+    "desc": "8.0.31 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.31/8.0.31.config"
+  },
+  {
+    "name": "8.0.24.config",
+    "desc": "8.0.24 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.24/8.0.24.config"
+  },
+  {
+    "name": "8.0.20.config",
+    "desc": "8.0.20 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.20/8.0.20.config"
+  },
+  {
+    "name": "8.0.16.config",
+    "desc": "8.0.16 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.16/8.0.16.config"
+  },
+  {
+    "name": "8.0.15.config",
+    "desc": "8.0.15 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.15/8.0.15.config"
+  },
+  {
+    "name": "8.0.14.config",
+    "desc": "8.0.14 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.14/8.0.14.config"
+  },
+  {
+    "name": "8.0.6.config",
+    "desc": "8.0.6 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.6/8.0.6.config"
+  },
+  {
+    "name": "8.0.3.config",
+    "desc": "8.0.3 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.3/8.0.3.config"
+  },
+  {
+    "name": "8.0.2.config",
+    "desc": "8.0.2 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.2/8.0.2.config"
+  },
+  {
+    "name": "8.0.1.config",
+    "desc": "8.0.1 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.1/8.0.1.config"
+  },
+  {
+    "name": "8.0.0.config",
+    "desc": "8.0.0 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/8.0.0/8.0.0.config"
+  },
+  {
+    "name": "7.0.22.config",
+    "desc": "7.0.22 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.22/7.0.22.config"
+  },
+  {
+    "name": "7.0.21.config",
+    "desc": "7.0.21 play版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.21-play/7.0.21.config"
+  },
+  {
+    "name": "7.0.18.config",
+    "desc": "7.0.18 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.18/7.0.18.config"
+  },
+  {
+    "name": "7.0.17.config",
+    "desc": "7.0.17 play版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.17-play/7.0.17.config"
+  },
+  {
+    "name": "7.0.17.config",
+    "desc": "7.0.17 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.17/7.0.17.config"
+  },
+  {
+    "name": "7.0.16.config",
+    "desc": "7.0.16 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.16/7.0.16.config"
+  },
+  {
+    "name": "7.0.15.config",
+    "desc": "7.0.15 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.15/7.0.15.config"
+  },
+  {
+    "name": "7.0.14.config",
+    "desc": "7.0.14 国内版",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.14/7.0.14.config"
+  },
+  {
+    "name": "7.0.13.config",
+    "desc": "7.0.13 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.13/7.0.13.config"
+  },
+  {
+    "name": "7.0.13.config",
+    "desc": "7.0.13 国内版x64",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.13x64/7.0.13.config"
+  },
+  {
+    "name": "7.0.12.config",
+    "desc": "7.0.12 play版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.12-play/7.0.12.config"
+  },
+  {
+    "name": "7.0.12.config",
+    "desc": "7.0.12 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.12/7.0.12.config"
+  },
+  {
+    "name": "7.0.11.config",
+    "desc": "7.0.11 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.11/7.0.11.config"
+  },
+  {
+    "name": "7.0.10.config",
+    "desc": "7.0.10 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.10/7.0.10.config"
+  },
+  {
+    "name": "7.0.9.config",
+    "desc": "7.0.9 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.9/7.0.9.config"
+  },
+  {
+    "name": "7.0.8.config",
+    "desc": "7.0.8 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.8/7.0.8.config"
+  },
+  {
+    "name": "7.0.7.config",
+    "desc": "7.0.7 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.7/7.0.7.config"
+  },
+  {
+    "name": "7.0.6.config",
+    "desc": "7.0.6 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.6/7.0.6.config"
+  },
+  {
+    "name": "7.0.5.config",
+    "desc": "7.0.5 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.5/7.0.5.config"
+  },
+  {
+    "name": "7.0.4.config",
+    "desc": "7.0.4 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.4/7.0.4.config"
+  },
+  {
+    "name": "7.0.3.config",
+    "desc": "7.0.3 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.3/7.0.3.config"
+  },
+  {
+    "name": "7.0.0.config",
+    "desc": "7.0.0 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/7.0.0/7.0.0.config"
+  },
+  {
+    "name": "6.7.3.config",
+    "desc": "6.7.3 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/6.7.3/6.7.3.config"
+  },
+  {
+    "name": "6.7.3.config",
+    "desc": "6.7.3 play版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/6.7.3-play/6.7.3.config"
+  },
+  {
+    "name": "6.7.2.config",
+    "desc": "6.7.2 国内版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/6.7.2/6.7.2.config"
+  },
+  {
+    "name": "6.7.2.config",
+    "desc": "6.7.2 play版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/6.7.2-play/6.7.2.config"
+  },
+  {
+    "name": "6.6.7.config",
+    "desc": "6.6.7 play版x32",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/6.6.7-play/6.6.7.config"
+  },
+  {
+    "name": "6.6.6.config",
+    "desc": "6.6.6 国内版,热心网友共享,自行测试",
+    "url": "https://gitee.com/JoshCai/MDWechat/raw/v4.0/data/config/wechat/6.6.6/6.6.6.config"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "info": "自定义悬浮按钮",
+  "menu": {
+    "icon": "ic_add.png"
+  },
+  "items": [
+    {
+      "order": 1,
+      "type":"com.tencent.mm.ui.contact.SelectContactUI",
+      "text": "群聊",
+      "icon": "ic_chat.png"
+    },
+    {
+      "order": 2,
+      "type": "com.tencent.mm.plugin.subapp.ui.pluginapp.AddMoreFriendsUI",
+      "text": "添加好友",
+      "icon": "ic_person_add.png"
+    },
+    {
+      "order": 3,
+      "type": "com.tencent.mm.plugin.offline.ui.WalletOfflineCoinPurseUI",
+      "text": "收付款",
+      "icon": "ic_money.png"
+    },
+    {
+      "order": 4,
+      "type": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+      "text": "扫一扫",
+      "icon": "ic_scan.png"
+    },
+    {
+      "order": 5,
+      "type": "com.tencent.mm.plugin.fts.ui.FTSMainUI",
+      "text": "搜索",
+      "icon": "ic_search.png"
+    },
+    {
+      "order": 6,
+      "type": "com.tencent.mm.plugin.sns.ui.SnsTimeLineUI",
+      "text": "朋友圈",
+      "icon": "ic_friendsgroup.png"
+    }
+  ]
+}

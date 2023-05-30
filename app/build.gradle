@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+//    aaptOptions.cruncherEnabled = false
+//    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.joshcai.mdwechat"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 108
+        versionName "4.2.6"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+//    implementation 'com.android.support:appcompat-v7:23.0.0'
+
+    compileOnly 'de.robv.android.xposed:api:53'
+    compileOnly 'de.robv.android.xposed:api:53:sources'
+
+    implementation project(':fab-lib')
+    implementation project(':tablayout-lib')
+    implementation project(':ColorPicker')
+
+    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    implementation 'com.github.Blankeer:rclayout:v1.6.0'
+
+    implementation 'net.dongliu:apk-parser:2.5.3'
+    implementation 'com.blankj:utilcode:1.19.3'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+
+    implementation 'ru.noties:markwon:1.1.0'
+    implementation 'ru.noties:markwon-image-loader:1.1.0'
+    implementation project(path: ':takephoto-lib')
+//    implementation 'org.jooq:jooq:3.12.4'
+}
+
+
+afterEvaluate {
+    installDebug.doLast {
+        killTargetAPP.execute()
+        startTargetAPP.execute()
+    }
+}
+
+def pkg = 'com.tencent.mm'
+task killTargetAPP(type: Exec) {
+    commandLine android.adbExecutable, 'shell', 'am', 'force-stop', pkg
+}
+
+task startTargetAPP(type: Exec) {
+    //adb shell monkey -p your.app.package.name -c android.intent.category.LAUNCHER 1
+    commandLine android.adbExecutable, 'shell', 'monkey', '-p', pkg, '-c', 'android.intent.category.LAUNCHER', '1'
+}

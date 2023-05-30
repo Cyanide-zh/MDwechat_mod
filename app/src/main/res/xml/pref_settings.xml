@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    <EditTextPreference-->
+    <!--        android:defaultValue="0+1+2"-->
+    <!--        android:key="debugConfigText"-->
+    <!--        android:summary="测试输入框。输入0,1,2,3的组合；用'+'分隔"-->
+    <!--        android:title="debugConfigText" />-->
+    <!--    <EditTextPreference-->
+    <!--        android:key="debugConfigText1"-->
+    <!--        android:title="debugConfigText1" />-->
+
+    <!--关于-->
+    <Preference
+        android:key="@string/key_joshcai_info"
+        android:layout="@layout/preference_info"
+        android:title="@string/app_name_version" />
+    <!--帮助和教程-->
+    <PreferenceScreen
+        android:summary="@string/summary_help"
+        android:title="@string/help">
+        <Preference
+            android:key="@string/key_attention"
+            android:title="@string/text_attention" />
+        <Preference
+            android:key="@string/key_start_use"
+            android:title="@string/text_start_use" />
+        <Preference
+            android:key="@string/key_Q_A"
+            android:title="@string/text_Q_A" />
+    </PreferenceScreen>
+    <!--更多信息-->
+    <PreferenceScreen
+        android:summary="@string/summary_about_settings"
+        android:title="@string/text_about_settings">
+        <Preference
+            android:layout="@layout/preference_info"
+            android:summary="@string/josh_cai_info2" />
+
+        <!--捐赠-->
+        <Preference
+            android:key="@string/key_alipay_red_packet"
+            android:summary="@string/summary_alipay_red_packet"
+            android:title="@string/text_alipay_red_packet" />
+        <PreferenceScreen
+            android:summary="@string/summary_donate"
+            android:title="@string/text_donate">
+            <Preference
+                android:key="@string/key_donate"
+                android:title="@string/text_donate_alipay" />
+            <Preference
+                android:key="@string/key_donate_wechat"
+                android:title="@string/text_donate_wechat" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="@string/summary_donate"
+            android:title="@string/text_donate_joshcai">
+            <Preference
+                android:key="@string/key_donate_joshcai"
+                android:title="@string/text_donate_alipay" />
+            <Preference
+                android:key="@string/key_donate_wechat_joshcai"
+                android:title="@string/text_donate_wechat" />
+        </PreferenceScreen>
+
+        <PreferenceCategory />
+        <Preference
+            android:key="@string/key_releases"
+            android:title="@string/text_releases" />
+        <Preference
+            android:key="@string/key_feedback_group"
+            android:summary="@string/text_feedback_group_info"
+            android:title="@string/text_feedback_group" />
+
+        <PreferenceScreen
+            android:key="@string/key_feedback_email"
+            android:summary="@string/text_feedback_email_info"
+            android:title="@string/text_feedback_email">
+            <Preference
+                android:key="@string/key_feedback_email_josh_cai"
+                android:title="@string/text_feedback_email_josh_cai" />
+            <!--                    <Preference-->
+            <!--                        android:key="@string/key_feedback_email_blanke"-->
+            <!--                        android:summary="@string/text_feedback_email_blanke_info"-->
+            <!--                        android:title="@string/text_feedback_email_blanke" />-->
+        </PreferenceScreen>
+
+        <Preference
+            android:key="@string/key_feedback_gitee"
+            android:title="@string/text_feedback_gitee" />
+
+        <PreferenceScreen
+            android:key="@string/key_github_screen"
+            android:summary="@string/text_github_screen_info"
+            android:title="@string/text_github_screen">
+            <PreferenceCategory android:title="@string/text_gitee">
+                <Preference
+                    android:key="@string/key_gitee_joshcai"
+                    android:title="@string/text_gitee_joshcai" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/text_github">
+                <Preference
+                    android:key="@string/key_github_blanke"
+                    android:title="@string/text_github_blanke" />
+                <Preference
+                    android:key="@string/key_github_joshcai"
+                    android:title="@string/text_github_joshcai" />
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+        <Preference
+            android:summary="@string/text_app_thank_content"
+            android:title="@string/text_app_thank" />
+    </PreferenceScreen>
+    <PreferenceCategory />
+    <!--通用设置-->
+    <PreferenceScreen android:title="@string/text_common_settings">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="@string/key_hook_switch"
+            android:summary="@string/text_settings_info"
+            android:title="@string/text_hook_switch" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_hide_launcher_icon"
+            android:summary="@string/text_hide_launcher_icon_info"
+            android:title="@string/text_hide_launcher_icon" />
+        <PreferenceCategory
+            android:dependency="@string/key_hook_switch"
+            android:title="@string/text_wechat_config_settings">
+            <Preference
+                android:key="@string/key_generate_wechat_config"
+                android:layout="@layout/preference_warning"
+                android:summary="@string/text_generate_wechat_config_info"
+                android:title="@string/text_generate_wechat_config" />
+            <Preference
+                android:key="@string/key_download_wechat_config"
+                android:summary="@string/text_download_wechat_config_info"
+                android:title="@string/text_download_wechat_config" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/text_pre_inst">
+            <ListPreference
+                android:dialogTitle="@string/text_pre_inst_color_schemes"
+                android:entries="@array/color_schemes"
+                android:entryValues="@array/color_schemes_value"
+                android:key="@string/key_pre_inst_color_schemes"
+                android:summary="重置配色方案为预设方案。(沉浸主题设置位于「背景」)"
+                android:title="@string/text_pre_inst_color_schemes" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:dependency="@string/key_hook_switch"
+        android:key="@string/key_fix_play"
+        android:layout="@layout/preference_warning"
+        android:summary="@string/summary_fix_play"
+        android:title="@string/text_fix_play" />
+    <!--配色方案-->
+    <PreferenceScreen
+        android:dependency="@string/key_hook_switch"
+        android:title="@string/text_color_scheme">
+        <Preference
+            android:key="@string/key_color_scheme_help"
+            android:title="@string/text_info" />
+        <PreferenceCategory android:title="@string/text_pre_inst">
+            <ListPreference
+                android:dialogTitle="@string/text_pre_inst_color_schemes"
+                android:entries="@array/color_schemes"
+                android:entryValues="@array/color_schemes_value"
+                android:key="@string/key_pre_inst_color_schemes1"
+                android:summary="重置配色方案为预设方案。(沉浸主题设置位于「背景」)"
+                android:title="@string/text_pre_inst_color_schemes" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/key_lock_bubble_schemes"
+                android:summary="@string/summary_lock_bubble_schemes"
+                android:title="@string/text_lock_bubble_schemes" />
+        </PreferenceCategory>
+        <!--通用-->
+        <PreferenceCategory android:title="@string/text_common_settings">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:disableDependentsState="true"
+                android:key="@string/key_hook_scheme_dark"
+                android:summary="@string/summary_hook_scheme_dark"
+                android:title="@string/text_hook_scheme_dark" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:dependency="@string/key_hook_scheme_dark"
+                android:key="@string/key_hook_night_mode"
+                android:summary="@string/summary_hook_night_mode"
+                android:title="@string/text_hook_night_mode" />
+            <!--主色+副色-->
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/colorPrimary"
+                android:key="@string/key_color_primary"
+                android:summary="@string/summary_color_primary"
+                android:title="@string/text_color_primary"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/colorSecondary"
+                android:key="@string/key_color_secondary"
+                android:summary="@string/summary_color_secondary"
+                android:title="@string/text_color_secondary"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/colorTertiary"
+                android:key="@string/key_color_tertiary"
+                android:summary="@string/summary_color_tertiary"
+                android:title="@string/text_color_tertiary"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+            <!--消息提示颜色-->
+            <PreferenceScreen android:title="@string/text_color_tip">
+                <com.jaredrummler.android.colorpicker.ColorPreference
+                    android:defaultValue="@color/colorTip"
+                    android:key="@string/key_color_tip"
+                    android:title="@string/text_color_tip"
+                    app:cpv_colorPresets="@array/colors"
+                    app:cpv_showAlphaSlider="true" />
+                <com.jaredrummler.android.colorpicker.ColorPreference
+                    android:defaultValue="@color/material_white"
+                    android:key="@string/key_color_tip_num"
+                    android:title="@string/text_color_tip_num"
+                    app:cpv_colorPresets="@array/colors"
+                    app:cpv_showAlphaSlider="true" />
+                <PreferenceCategory />
+                <!--在自定义导航中单独配色-->
+                <SwitchPreference
+                    android:defaultValue="false"
+                    android:key="@string/key_change_guide_tip_color"
+                    android:title="@string/text_change_guide_tip_color" />
+                <com.jaredrummler.android.colorpicker.ColorPreference
+                    android:defaultValue="@color/colorTip"
+                    android:dependency="@string/key_change_guide_tip_color"
+                    android:key="@string/key_color_tip_in_guide"
+                    android:title="@string/text_color_tip_in_guide"
+                    app:cpv_colorPresets="@array/colors"
+                    app:cpv_showAlphaSlider="true" />
+                <com.jaredrummler.android.colorpicker.ColorPreference
+                    android:defaultValue="@color/material_white"
+                    android:dependency="@string/key_change_guide_tip_color"
+                    android:key="@string/key_color_tip_num_in_guide"
+                    android:title="@string/text_color_tip_num_in_guide"
+                    app:cpv_colorPresets="@array/colors"
+                    app:cpv_showAlphaSlider="true" />
+            </PreferenceScreen>
+        </PreferenceCategory>
+        <!--主界面内容字体颜色-->
+        <PreferenceCategory android:title="@string/text_main_settings">
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/key_hook_appbrand_bg_color"
+                android:summary="@string/summary_hook_appbrand_bg_color"
+                android:title="@string/text_hook_appbrand_bg_color" />
+
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/transparentGray"
+                android:dependency="@string/key_hook_appbrand_bg_color"
+                android:key="@string/key_appbrand_bg_color"
+                android:title="@string/text_appbrand_bg_color"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="@string/key_hook_main_textcolor"
+                android:title="@string/text_hook_main_textcolor" />
+
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/material_black"
+                android:dependency="@string/key_hook_main_textcolor"
+                android:key="@string/key_main_textcolor_title"
+                android:summary="@string/summary_main_textcolor_title"
+                android:title="@string/text_main_textcolor_title"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/material_black"
+                android:dependency="@string/key_hook_main_textcolor"
+                android:key="@string/key_main_textcolor_content"
+                android:title="@string/text_main_textcolor_content"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+        </PreferenceCategory>
+        <!--聊天气泡-->
+        <PreferenceCategory android:title="@string/text_chat_settings">
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/key_hook_chat_settings"
+                android:title="@string/text_hook_bubble" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:dependency="@string/key_hook_chat_settings"
+                android:key="@string/key_hook_chat_label_color"
+                android:title="@string/text_hook_chat_label_color" />
+            <com.jaredrummler.android.colorpicker.ColorPreference
+                android:defaultValue="@color/material_grey"
+                android:dependency="@string/key_hook_chat_label_color"
+                android:key="@string/key_chat_label_color"
+                android:summary="@string/symmary_chat_label_color"
+                android:title="@string/text_chat_label_color"
+                app:cpv_colorPresets="@array/colors"
+                app:cpv_showAlphaSlider="true" />
+            <PreferenceScreen
+                android:summary="@string/text_hook_bubble_info"
+                android:title="@string/text_chat_bubbles">
+                <Preference
+                    android:key="@string/key_bubble_help"
+                    android:title="@string/text_info" />
+                <!--深色模式-->
+                <SwitchPreference
+                    android:defaultValue="false"
+                    android:dependency="@string/key_hook_night_mode"
+                    android:key="@string/key_hook_bubble_in_night_mode"
+                    android:summary="@string/summary_hook_bubble_in_night_mode"
+                    android:title="@string/text_hook_bubble_in_night_mode" />
+                <PreferenceCategory android:title="@string/text_hook_bubble">
+                    <com.jaredrummler.android.colorpicker.ColorPreference
+                        android:defaultValue="@color/material_black"
+                        android:dependency="@string/key_hook_chat_settings"
+                        android:key="@string/key_hook_chat_text_color_left"
+                        android:title="@string/text_hook_chat_text_color_left"
+                        app:cpv_colorPresets="@array/colors"
+                        app:cpv_showAlphaSlider="true" />
+                    <com.jaredrummler.android.colorpicker.ColorPreference
+                        android:defaultValue="@color/material_white"
+                        android:dependency="@string/key_hook_chat_settings"
+                        android:key="@string/key_hook_chat_text_color_right"
+                        android:title="@string/text_hook_chat_text_color_right"
+                        app:cpv_colorPresets="@array/colors"
+                        app:cpv_showAlphaSlider="true" />
+                    <SwitchPreference
+                        android:defaultValue="true"
+                        android:dependency="@string/key_hook_chat_settings"
+                        android:key="@string/key_hook_bubble_tint"
+                        android:summary="@string/text_hook_bubble_tint_info"
+                        android:title="@string/text_hook_bubble_tint" />
+                    <com.jaredrummler.android.colorpicker.ColorPreference
+                        android:defaultValue="@color/material_white"
+                        android:dependency="@string/key_hook_bubble_tint"
+                        android:key="@string/key_hook_bubble_tint_left"
+                        android:title="@string/text_hook_bubble_tint_left"
+                        app:cpv_colorPresets="@array/colors"
+                        app:cpv_showAlphaSlider="true" />
+                    <com.jaredrummler.android.colorpicker.ColorPreference
+                        android:defaultValue="@color/colorSecondary"
+                        android:dependency="@string/key_hook_bubble_tint"
+                        android:key="@string/key_hook_bubble_tint_right"
+                        android:title="@string/text_hook_bubble_tint_right"
+                        app:cpv_colorPresets="@array/colors"
+                        app:cpv_showAlphaSlider="true" />
+                </PreferenceCategory>
+                <PreferenceCategory android:title="@string/text_hook_red_packet">
+                    <SwitchPreference
+                        android:defaultValue="true"
+                        android:dependency="key_hook_chat_settings"
+                        android:key="key_hook_red_packet"
+                        android:title="@string/text_hook_red_packet" />
+                    <com.jaredrummler.android.colorpicker.ColorPreference
+                        android:defaultValue="@color/material_white"
+                        android:dependency="@string/key_hook_chat_settings"
+                        android:key="@string/key_hook_red_packet_text_color"
+                        android:title="@string/text_hook_red_packet_text_color"
+                        app:cpv_colorPresets="@array/colors"
+                        app:cpv_showAlphaSlider="true" />
+
+                </PreferenceCategory>
+            </PreferenceScreen>
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <!--主界面设置 / 背景-->
+    <PreferenceScreen
+        android:dependency="@string/key_hook_switch"
+        android:key="@string/key_main_settings"
+        android:title="@string/text_main_bg_settings">
+        <!--背景-->
+        <PreferenceCategory android:title="@string/text_background_settings">
+            <PreferenceScreen
+                android:dependency="@string/key_hook_switch"
+                android:title="@string/text_background_settings">
+                <Preference
+                    android:key="@string/key_background_help"
+                    android:title="@string/text_info" />
+                <SwitchPreference
+                    android:defaultValue="false"
+                    android:key="@string/key_hook_tab_bg"
+                    android:summary="@string/summary_hook_tab_bg"
+                    android:title="@string/text_hook_tab_bg" />
+                <PreferenceScreen android:title="@string/text_select_bg">
+                    <Preference
+                        android:key="@string/key_select_bg_0"
+                        android:title="@string/text_select_bg_0" />
+                    <Preference
+                        android:key="@string/key_select_bg_1"
+                        android:title="@string/text_select_bg_1" />
+                    <Preference
+                        android:key="@string/key_select_bg_2"
+                        android:title="@string/text_select_bg_2" />
+                    <Preference
+                        android:key="@string/key_select_bg_3"
+                        android:title="@string/text_select_bg_3" />
+
+                </PreferenceScreen>
+                <SwitchPreference
+                    android:defaultValue="true"
+                    android:key="@string/key_enable_bg_chat"
+                    android:title="@string/text_enable_bg_chat" />
+                <Preference
+                    android:dependency="@string/key_enable_bg_chat"
+                    android:key="@string/key_select_bg_chat"
+                    android:summary="@string/summary_select_bg_chat"
+                    android:title="@string/text_select_bg_chat" />
+                <PreferenceCategory android:title="@string/text_hook_bg_immersion">
+                    <SwitchPreference
+                        android:defaultValue="false"
+                        android:dependency="@string/key_hook_tab_bg"
+                        android:key="@string/key_hook_bg_immersion"
+                        android:summary="@string/summary_hook_bg_immersion"
+                        android:title="@string/text_hook_bg_immersion" />
+                    <SwitchPreference
+                        android:dependency="@string/key_hook_bg_immersion"
+                        android:key="@string/key_change_resolution"
+                        android:summary="@string/summary_change_resolution"
+                        android:title="@string/text_change_resolution" />
+                    <EditTextPreference
+                        android:defaultValue="-1,-1"
+                        android:dependency="@string/key_change_resolution"
+                        android:key="@string/key_resolution"
+                        android:summary="@string/summary_resolution"
+                        android:title="@string/text_resolution" />
+                </PreferenceCategory>
+                <PreferenceCategory />
+                <SwitchPreference
+                    android:defaultValue="true"
+                    android:key="@string/key_hook_statusbar_transparent"
+                    android:summary="@string/summary_hook_statusbar_transparent"
+                    android:title="@string/text_hook_statusbar_transparent" />
+                <EditTextPreference
+                    android:defaultValue="0"
+                    android:dependency="@string/key_hook_tab_bg"
+                    android:dialogTitle="@string/dialog_title_hook_conversation_background_alpha"
+                    android:key="@string/key_hook_conversation_background_alpha"
+                    android:numeric="integer"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:summary="@string/summary_hook_conversation_background_alpha"
+                    android:title="@string/text_hook_conversation_background_alpha"
+                    tools:ignore="Deprecated" />
+            </PreferenceScreen>
+        </PreferenceCategory>
+
+        <PreferenceCategory android:title="@string/text_wechat_8_0_0">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="@string/key_settings_page_transparent"
+                android:summary="@string/summary_settings_page_transparent"
+                android:title="@string/text_settings_page_transparent" />
+        </PreferenceCategory>
+
+        <PreferenceCategory android:title="@string/text_others">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="@string/key_hook_remove_appbrand"
+                android:summary="@string/key_hook_remove_appbrand_summary"
+                android:title="@string/text_hook_remove_appbrand" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/key_hook_avatar"
+                android:title="@string/text_hook_avatar" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/key_hide_wechatId"
+                android:summary="@string/summmary_hide_wechatId"
+                android:title="@string/text_hide_wechatId" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/text_help_float_button">
+            <Preference
+                android:key="@string/key_float_button_help"
+                android:title="@string/text_info" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="@string/key_hook_float_button"
+                android:title="@string/text_hook_float_button" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:dependency="@string/key_hook_float_button"
+                android:key="@string/key_hook_float_button_color_is_secondary"
+                android:summary="@string/summary_hook_float_button_color_is_secondary"
+                android:title="@string/text_hook_float_button_color_is_secondary" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:dependency="@string/key_hook_float_button"
+                android:key="@string/key_hook_float_button_color_up"
+                android:title="@string/text_hook_float_button_color_up" />
+            <EditTextPreference
+                android:defaultValue="-90"
+                android:dependency="@string/key_hook_float_button"
+                android:key="@string/key_hook_float_button_angle"
+                android:numeric="signed"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:summary="@string/summary_hook_float_button_angle"
+                android:title="@string/text_hook_float_button_angle"
+                tools:ignore="Deprecated" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_float_button"
+                android:key="@string/key_hook_float_button_move"
+                android:summary="@string/text_hook_float_button_move_info"
+                android:title="@string/text_hook_float_button_move" />
+        </PreferenceCategory>
+
+        <PreferenceCategory android:title="@string/navigate">
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="@string/key_hook_actionbar_color"
+                android:summary="@string/summary_hook_actionbar_color"
+                android:title="@string/text_hook_actionbar_color" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:key="@string/key_hook_hide_actionbar"
+                android:summary="@string/summary_hook_hide_actionbar"
+                android:title="@string/text_hook_hide_actionbar" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:disableDependentsState="true"
+                android:key="@string/key_hide_tab"
+                android:title="@string/text_hide_tab" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:dependency="@string/key_hide_tab"
+                android:key="@string/key_hook_tab"
+                android:summary="@string/summary_hook_tab"
+                android:title="@string/text_hook_tab" />
+            <PreferenceScreen
+                android:dependency="@string/key_hook_tab"
+                android:title="@string/text_select_tab_icon">
+                <Preference
+                    android:key="@string/key_select_tab_icon_0"
+                    android:title="@string/text_select_tab_icon_0" />
+                <Preference
+                    android:key="@string/key_select_tab_icon_1"
+                    android:title="@string/text_select_tab_icon_1" />
+                <Preference
+                    android:key="@string/key_select_tab_icon_2"
+                    android:title="@string/text_select_tab_icon_2" />
+                <Preference
+                    android:key="@string/key_select_tab_icon_3"
+                    android:title="@string/text_select_tab_icon_3" />
+            </PreferenceScreen>
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_tab"
+                android:key="@string/key_tab_layout_main_page_filtered"
+                android:summary="@string/summary_tab_layout_main_page_filtered"
+                android:title="@string/text_tab_layout_main_page_filtered" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_tab"
+                android:key="@string/key_tab_layout_filtered"
+                android:summary="@string/summary_tab_layout_filtered"
+                android:title="@string/text_tab_layout_filtered" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_tab"
+                android:key="@string/key_hook_tab_elevation"
+                android:summary="@string/summary_hook_tab_elevation"
+                android:title="@string/text_hook_tab_elevation" />
+            <SwitchPreference
+                android:defaultValue="true"
+                android:dependency="@string/key_hook_tab"
+                android:key="@string/key_hook_tab_bar"
+                android:summary="@string/summary_hook_tab_bar"
+                android:title="@string/text_hook_tab_bar" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_tab_bar"
+                android:key="@string/key_small_tab_bar_size"
+                android:summary="@string/summary_small_tab_bar_size"
+                android:title="@string/text_small_tab_bar_size" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_tab"
+                android:key="@string/key_tab_layout_on_top"
+                android:title="@string/text_tab_layout_on_top" />
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+    <!--沉浸主题模式选择-->
+    <PreferenceScreen
+        android:dependency="@string/key_hook_bg_immersion"
+        android:key="@string/key_hook_bg_immersion_mode"
+        android:layout="@layout/preference_info"
+        android:summary="@string/summary_hook_bg_immersion_mode"
+        android:title="@string/text_hook_bg_immersion_mode">
+        <Preference
+            android:layout="@layout/preference_info"
+            android:summary="@string/text_resolution_tips" />
+        <ListPreference
+            android:defaultValue="false"
+            android:dependency="@string/key_hook_tab_bg"
+            android:dialogTitle="@string/text_chat_bg_mode"
+            android:entries="@array/chat_bg_modes"
+            android:entryValues="@array/chat_bg_mode_value"
+            android:key="@string/key_chat_bg_mode"
+            android:summary="@string/summary_chat_bg_mode"
+            android:title="@string/text_chat_bg_mode" />
+        <ListPreference
+            android:defaultValue="false"
+            android:dependency="@string/key_hook_bg_immersion"
+            android:dialogTitle="@string/text_bg_immersion_mode"
+            android:entries="@array/bg_immersion_modes"
+            android:entryValues="@array/bg_immersion_value"
+            android:key="@string/key_bg_immersion_mode"
+            android:summary="@string/summary_bg_immersion_mode"
+            android:title="@string/text_bg_immersion_mode" />
+    </PreferenceScreen>
+    <!--重置配置文件-->
+    <PreferenceScreen
+        android:dependency="@string/key_hook_switch"
+        android:summary="@string/sum_reset"
+        android:title="@string/reset">
+        <PreferenceCategory
+            android:dependency="@string/key_hook_switch"
+            android:summary="@string/text_reset">
+            <Preference
+                android:key="@string/key_reset_config"
+                android:summary="@string/text_reset_config_info"
+                android:title="@string/text_reset_config" />
+            <Preference
+                android:key="@string/key_reset_float_bottom_config"
+                android:summary="@string/text_reset_float_bottom_config_info"
+                android:title="@string/text_reset_float_bottom_config" />
+            <Preference
+                android:key="@string/key_reset_icon_config"
+                android:summary="@string/text_reset_icon_config_info"
+                android:title="@string/text_reset_icon_config" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <!--调试-->
+    <PreferenceScreen
+        android:dependency="@string/key_hook_switch"
+        android:title="@string/text_settings_debug">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/key_hook_log"
+            android:summary="@string/text_hook_log_info"
+            android:title="@string/text_hook_log" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:dependency="@string/key_hook_log"
+            android:key="@string/key_hook_log_xposed"
+            android:summary="@string/text_hook_log_xposed_info"
+            android:title="@string/text_hook_log_xposed" />
+
+        <Preference
+            android:key="@string/key_clear_logs"
+            android:title="@string/text_clear_logs" />
+        <PreferenceCategory>
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_log"
+                android:key="@string/key_hook_debug"
+                android:summary="@string/text_hook_debug_info"
+                android:title="@string/text_hook_debug" />
+            <SwitchPreference
+                android:defaultValue="false"
+                android:dependency="@string/key_hook_log"
+                android:key="@string/key_hook_debug2"
+                android:summary="@string/text_hook_debug_info2"
+                android:title="@string/text_hook_debug2" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+//提示：此文件自动生成，用于保存沉浸背景的图片位置信息。
+//created by JoshCai
+{
+lastModifiedTimeOfSettings:0,
+screenHeight:-1,
+backgroundPicPos:[
+{y:0,height:0},
+{y:0,height:0},
+{y:0,height:0},
+{y:0,height:0}
+]
+}
